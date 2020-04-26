@@ -1,6 +1,7 @@
 # 433MHz sender for quigg remote switches
 
 ### Installing
+* Install wiringPi
 * clone this repository
 * cd into this repository
 * run
