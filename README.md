@@ -40,5 +40,5 @@ Set this to 0 to control switches.
 ## Example
 Switch unit 2 on
 ```
-./send 0 3 1234 1 0 1 0
+./send 0 3 1234 2 0 1 0
 ```
