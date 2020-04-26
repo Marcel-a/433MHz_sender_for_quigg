@@ -16,22 +16,22 @@ make
 ## System code
 The systemCode is a fixed code per remote and its switches. I don't know, if the code can be changed.
 
-I used this tool to find my systemCode: [https://www.instructables.com/id/Super-Simple-Raspberry-Pi-433MHz-Home-Automation/](https://www.instructables.com/id/Super-Simple-Raspberry-Pi-433MHz-Home-Automation/)
+I used this tool to find my systemCode: [https://www.instructables.com/id/Super-Simple-Raspberry-Pi-433MHz-Home-Automation/](https://www.instructables.com/id/Super-Simple-Raspberry-Pi-433MHz-Home-Automation/)<br />
 The first 12 bits represent the system code.
 
 ## Unit codes
-The unit codes on my remote had a weird order:
-Unit 1: 0
-Unit 2: 2
-Unit 3: 3
+The unit codes on my remote had a weird order:<br />
+Unit 1: 0<br />
+Unit 2: 2<br />
+Unit 3: 3<br />
 Unit 4: 1
 
 ## commandToAllDevices
-0 = switch only the unit selected by unitCode
+0 = switch only the unit selected by unitCode<br />
 1 = switch all units
 
 ## switchDimmer
-0 = switch off
+0 = switch off<br />
 1 = switch on
 
 ## switchDimmerMode
