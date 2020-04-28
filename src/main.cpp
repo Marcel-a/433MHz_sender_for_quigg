@@ -14,8 +14,8 @@ int main(int argc, char* argv[])
 {
     wiringPiSetup();
 
-    if (argc < 8) {
-        std::cerr << "Usage: " << argv[0] << " WiringPiPin repeatings systemCode unitCode commandToAllDevices switchDimmer switchDimmerMode" << std::endl;
+    if (argc < 9) {
+        std::cerr << "Usage: " << argv[0] << " WiringPiPin repeatings systemCode unitCode commandToAllDevices switchDimmer switchDimmerMode internal" << std::endl;
         return 1;
     }
 
@@ -61,8 +61,14 @@ int main(int argc, char* argv[])
         return 1;
     }
 
+    int internal = atoi(argv[8]);
+    if (internal < 0 || internal > 1) {
+        cerr << "internal must be 0 or 1" << endl;
+        return 1;
+    }
+
     QuiggControl qc;
     qc.init(pin);
-    qc.send(repeatings, systemCode, unitCode, allDevices, switchDimmer, switchDimmerMode);
+    qc.send(repeatings, systemCode, unitCode, allDevices, switchDimmer, switchDimmerMode, internal);
 
 }

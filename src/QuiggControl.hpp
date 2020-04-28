@@ -6,7 +6,7 @@ class QuiggControl {
     
 public:
     void init(int pin);
-    void send(int repeatings, int systemCode, int unitCode, int allDevices, int switchDimmer, int switchDimmerMode);
+    void send(int repeatings, int systemCode, int unitCode, int allDevices, int switchDimmer, int switchDimmerMode, int internal);
 
 };
 

@@ -11,7 +11,7 @@ void QuiggControl::init(int pin) {
     this->pin = pin;
 }
 
-void QuiggControl::send(int repeatings, int systemCode, int unitCode, int allDevices, int switchDimmer, int switchDimmerMode) {
+void QuiggControl::send(int repeatings, int systemCode, int unitCode, int allDevices, int switchDimmer, int switchDimmerMode, int internal) {
     if (pin < 0) {
         cerr << "call QuiggControl::init first!" << endl;
         exit(1);
@@ -24,6 +24,7 @@ void QuiggControl::send(int repeatings, int systemCode, int unitCode, int allDev
     msg |= allDevices << 5;
     msg |= switchDimmer << 4;
     msg |= switchDimmerMode << 3;
+    msg |= internal << 1;
     // bits 1 and 2 (always zero and internal) are 0
 
     // parity
