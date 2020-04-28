@@ -11,7 +11,7 @@ make
 
 ### Usage
 ```
-./send WiringPiPin repeatings systemCode unitCode commandToAllDevices switchDimmer switchDimmerMode
+./send WiringPiPin repeatings systemCode unitCode commandToAllDevices switchDimmer switchDimmerMode internal
 ```
 
 ## System code
@@ -45,5 +45,5 @@ Set this to 0 to control switches.
 ## Example
 Switch unit 2 on
 ```
-./send 0 3 1234 2 0 1 0
+./send 0 3 1234 2 0 1 0 1
 ```
