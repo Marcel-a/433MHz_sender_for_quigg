@@ -43,7 +43,7 @@ void QuiggControl::send(int repeatings, int systemCode, int unitCode, int allDev
     pinMode(pin, OUTPUT);
 
     for (int u = 0; u < repeatings; u++) {
-        cout << "send: ";
+        //cout << "send: ";
 
         digitalWrite(pin, HIGH);
         delayMicroseconds(700);
