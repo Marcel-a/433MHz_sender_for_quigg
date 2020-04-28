@@ -39,7 +39,7 @@ Unit 4: 1
 Set this to 0 to control switches.
 
 ## internal
-0 = for unit 1 and 4
+0 = for unit 1 and 4<br />
 1 = for unit 2 and 3
 
 ## Example
