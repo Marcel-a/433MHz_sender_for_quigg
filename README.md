@@ -38,6 +38,10 @@ Unit 4: 1
 ## switchDimmerMode
 Set this to 0 to control switches.
 
+## internal
+0 = for unit 1 and 4
+1 = for unit 2 and 3
+
 ## Example
 Switch unit 2 on
 ```
